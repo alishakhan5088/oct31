@@ -27,3 +27,5 @@ jobs:
         with:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
+      - name: mystep6-push the docker image
+        run: docker image push -t alisha5088/myimage_oct31:t1 -f
