@@ -3,4 +3,13 @@ on:
   push:
 jobs:
   myjob1:
-    runs:-on: ubuntu-latest  
+    runs:-on: ubuntu-latest
+    steps:
+      - name: mystep1
+        run: |
+          whoami
+          cd
+          ls -al
+          pwd
+          echo alisha
+
