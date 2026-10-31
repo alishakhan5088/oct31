@@ -28,4 +28,4 @@ jobs:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
       - name: mystep6-push the docker image
-        run: docker image push alishakhan5088/myimage_oct31:t1 
+        run: docker image push alishakhannnnnnnnn03/myimage_oct31:t1
