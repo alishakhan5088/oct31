@@ -12,7 +12,14 @@ jobs:
           ls -al
           pwd
           echo alisha
+          docker --version
+          docker compose version
       - name: mystep2-clone the repo in current directory
         uses: actions/checkout@v4
       - name: mystep3-check the source code
         run: ls -al
+      - name: mystep4- docker image build
+        run: docker image build -t alishakhan5088/myimage_oct31:t1 -f Dockerfile .
+      - name: mystep5-check the docker images
+        run: docker images
+      
