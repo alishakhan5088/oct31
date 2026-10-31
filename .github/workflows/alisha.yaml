@@ -22,4 +22,8 @@ jobs:
         run: docker image build -t alishakhan5088/myimage_oct31:t1 -f Dockerfile .
       - name: mystep5-check the docker images
         run: docker images
-      
+      - name: mystep5-login to dockerhub
+        uses: docker/login-action@v3
+        with:
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
