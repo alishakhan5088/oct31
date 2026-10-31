@@ -3,7 +3,7 @@ on:
   push:
 jobs:
   myjob1:
-    runs:-on: ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
       - name: mystep1
         run: |
@@ -12,4 +12,7 @@ jobs:
           ls -al
           pwd
           echo alisha
-
+      - name: mystep2-clone the repo in current directory
+        uses: actions/checkout@v4
+      - name: mystep3-check the source code
+        run: ls -al
